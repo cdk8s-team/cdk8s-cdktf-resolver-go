@@ -14,7 +14,7 @@ import (
 	cdktf      "github.com/hashicorp/terraform-cdk-go/cdktf/jsii"
 )
 
-//go:embed cdk8s-cdktf-resolver-0.0.102.tgz
+//go:embed cdk8s-cdktf-resolver-0.0.103.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -26,5 +26,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@cdk8s/cdktf-resolver", "0.0.102", tarball)
+	_jsii_.Load("@cdk8s/cdktf-resolver", "0.0.103", tarball)
 }
